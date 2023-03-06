@@ -1,0 +1,58 @@
+2)
+
+a = 0
+b = 1
+c = 0
+Valor_Pausa = int(input('Digite o valor que deseja verificar: '))
+while True:
+    c = a+b
+    if c == Valor_Pausa:
+        print('Pertence a sequencia Fibonacci')
+        break
+    elif c > Valor_Pausa:
+        print('Não pertence a sequencia Fibonacci')
+        break
+    a = b
+    b = c
+    
+ 
+ 3) 
+ 
+Faturamento_Mensal = [2,3,5,4,2,1,5,6,8,5,1,5]
+Maior_Valor = max(Faturamento_Mensal)
+Menor_Valor = min(Faturamento_Mensal)
+Media_Mensal = sum(Faturamento_Mensal)/len(Faturamento_Mensal)
+Superior_Media = 0
+
+for Faturamento in Faturamento_Mensal:
+    if Faturamento > Media_Mensal:
+        Superior_Media+=1
+      
+print(f'Total de dias que superaram a media do faturamento mensal{Superior_Media})
+
+4) 
+
+
+Estados = {'SP': 67836.43, 'RJ': 36678.66, 'MG': 29229.88, 'ES': 27165.48, 'Outros': 19849.53}
+
+Total = 0
+
+for Faturamento in Estados.values():
+    Total += Faturamento
+    
+for Estado, Faturamento in Estados.items():
+    Porcentagem = (100*Faturamento)/Total
+    print(f'{Estado} representa {Porcentagem:.2f}% do faturamento!')
+    
+ 5)
+ Palavra = input('Digite a Palavra que gostaria de inverter: ')
+Palavra_Invertida = ''
+Inicia = len(Palavra)-1
+
+for Posicao in range(Inicia,-1,-1):
+    Palavra_Invertida+=Palavra[Posicao]
+    
+    
+print(Palavra_Invertida)
+        
+ 
